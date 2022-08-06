@@ -1,0 +1,136 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {David Edward Hale}}\\
+	New York, NY $\cdot$ Hale.David.Edward@gmail.com $\cdot$ (203) 460-2168 $\cdot$ http://linkedin.com/in/david-hale-2598a791/\\
+\end{center}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+\textbf{Oscar Health Insurance} \hfill New York City, NY\\
+\textit{Level 3 Operations Analyst, Process Design and Tech Strategy} \hfill August 2021 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item 	I take a workflow, break it down into its constituent parts, analyze how to improve it, and either personally automate the parts that can be automated, or project manage the engineering team in the development of the new automation, and train processors on any remaining manual parts, and create end-to-end documentation.
+	\item 	Responsible for designing, automating, and implementations of new workflows for adjudicating health insurance claims, as well as training insurance claims processors in new workflows.
+	\item 	In response to Medicare audits, found source of mis-adjudicated claims in tech stack, fixed automations, and retrained processors in correct workflow.
+	\item 	Automated analyses resulting in freeing up $\approx{6}$ person team for other analysis.
+	\item 	Hand picked for SWAT team working on company wide claims adjudication issues.
+	\item 	Identified \$3.8 Million dollars in overpayments and \textasciitilde{}120,000 claims paid out incorrectly from misconfigured automations and implemented fixes to allow for recoupment.
+\end{itemize}
+
+\textbf{MTA, Transit Adjudication Bureau} \hfill New York City, NY\\
+\textit{Data/System Analyst (Consultant)} \hfill November 2020 - August 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Coordinated all communication and projects with MTA IT for the Transit Adjudication Bureau. Supplied first level solutions where possible, documented and provided escalation for serious issues.
+	\item Business Analyst for workflow improvement/proprietary software improvements. Responsible for creating documentation and writing up system improvements.
+	\item Conducted QA tests and approval for software improvements before introduction to production environment.
+	\item Designed, built, and produced weekly, monthly, and annual reports using SQL and Microsoft PowerBI.
+	\item Interfaced with data analysts outside the MTA such as the NYPD for data verification.
+\end{itemize}
+
+\textbf{Alternative Transportation Systems, LLC.} \hfill Boston MA\\
+\textit{Business Analyst--Transportation Operations Generalist} \hfill June 2019 - November 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Built business automation processes including payroll, employee recertification and testing, and report generation. Worked on modularizing and modernizing a system of scripts into a source controlled, and maintained system using Python, ODBC, SQL, JavaScript, and Google Apps Script.
+	\item Designed and deployed an app using Google Apps Script and AppSheet which is used by over 50 employees daily. Automated vehicle maintenance reports and analysis of over 1,600 data points per day, resulting in faster data flow, expediting preventative maintenance actions by up to a month.
+	\item Created and deployed a full-stack ecosystem linking a SQL database to Google Suite using R in a FIPPs and HIPAA compliant manner. This system displays live geographic information and driver shifts used to manage 50+ routes at once.
+	\item Wrote an aggregation script used by the Billing Department to generate invoices for billing records, replacing the manual billing method. Continuously iterated changes with updated business needs.
+	\item Designed and built a live profitability tracker used by c-suite management to measure operational efficiency, income, and profit margins using SQL, Google Apps Script, Google Maps API, and Google Sheets.
+	\item Generated all KPI’s such as On-Time Performance, trips per hour, etc. as needed by management, including demand sensing, capacity measurements and predictive modeling.
+	\item Presided over IT provisioning, technical support, and training for over 60 users.
+	\item Oversaw contractual rate negotiations, work acceptance or rejection, and operations for a \$90,000/month contract.
+\end{itemize}
+
+
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages: & Python, R, JavaScript, Google Apps Script, SQL, BigQuery \\
+    Processes: & Documentation, UAT, Data Analytics, REST API, Troubleshooting, Automation \\
+\end{tabular}
+\vspace{2mm}
+
+
+\header{Awards}
+\textbf{Oscar Hackathon Q3 2022} \hfill August 2022\\
+Won first place in Operations Excellence for React App using Regex to identify types of medical codes. \hfill August 2022\\
+\vspace*{2mm}
+
+\ 
+\end{document}
