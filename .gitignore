@@ -3,3 +3,4 @@
 *.log
 *.gz
 resume.fdb_latexmk
+*.out
