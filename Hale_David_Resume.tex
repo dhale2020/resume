@@ -1,10 +1,10 @@
 \documentclass[a4paper]{article}
     \usepackage{fullpage}
-    \usepackage{amsmath}
-    \usepackage{amssymb}
+    % \usepackage{amsmath}
+    % \usepackage{amssymb}
     \usepackage{textcomp}
     \usepackage[utf8]{inputenc}
-    \usepackage[T1]{fontenc}
+    % \usepackage[T1]{fontenc}
     \usepackage{hyperref}
     \textheight=10in
     \pagestyle{empty}
@@ -18,13 +18,6 @@
 
 % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\area} [2] {
-    \vspace*{-9pt}
-    \begin{verse}
-        \textbf{#1}   #2
-    \end{verse}
-}
-
 \newcommand{\lineunder} {
     \vspace*{-8pt} \\
     \hspace*{-18pt} \hrulefill \\
@@ -35,38 +28,9 @@
     \vspace*{-6pt} \lineunder
 }
 
-\newcommand{\employer} [3] {
-    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
-}
-
-\newcommand{\contact} [3] {
-    \vspace*{-10pt}
-    \begin{center}
-        {\Large \scshape {#1}}\\
-        #2 \\ #3
-    \end{center}
-    \vspace*{-8pt}
-}
-
-\newenvironment{achievements}{
-    \begin{list}
-        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
-    \end{list}
-}
-
-\newcommand{\schoolwithcourses} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-    \vspace*{5pt}
-}
-
-\newcommand{\school} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-}
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
-    \begin{document}
+\begin{document}
 \vspace*{-40pt}
 
     
@@ -75,12 +39,12 @@
 \vspace*{-9pt}
 \begin{center}
 	{\Large \scshape {David E. Hale}}\\
-	New York City, NY $\cdot$ \href{mailto:Hale.David.Edward@gmail.com}{Hale.David.Edward@gmail.com} $\cdot$ \href{tel:203-460-2168}{(203)-460-2168} $\cdot$ \href{http://linkedin.com/in/david-hale-2598a791/}{LinkedIn Link}
+	New York City, NY $\cdot$ \href{mailto:Hale.David.Edward@gmail.com}{Hale.David.Edward@gmail.com} $\cdot$ \href{tel:203-460-2168}{(203)-460-2168} $\cdot$ \href{www.linkedin.com/in/david-e-hale}{www.linkedin.com/in/david-e-hale}
 \end{center}
 
 \header{Personal Statement}
 \vspace{1mm}
-\textbf{What I do is take a business process and analyze and resdesign it based on what can be automated efficiently, and either personally automate or project manage the automation,
+\textbf{I take a business process, analyze and redesign it based on what can be automated efficiently, and either personally automate or project manage the automation,
         then retrain staff and create end-to-end documentation \& onboarding material ensuring smooth, scalable solutioning.
 }
 
@@ -94,15 +58,16 @@
     \item Configurations Analysis: Charged with uncovering, scoping, and fixing issues in claims adjudication processes. 
         Notable achievements include identifying \$12 million in overpayments across \textasciitilde{}120,000 claims due to misconfigured automations and implemented recoupment fixes.
 
-    \item   Workflow Design: Scope new workflows, designs and sets requirements for what can/should be automated based on project requirements,
-     and acts as liason between Engineering, Legal, Contracts, Operations, and other departments to ensure smooth and rapid deployments.
+    \item   Workflow Design: Established new workflows, defined and set technical requirements for what can/should be automated based on project requirements,
+     and acts as liaison between Engineering, Legal, Contracts, Operations, and other departments to ensure smooth and rapid deployments.
+     \item 	Troubleshooting and Issue Scoping: In response to Medicare audits found cause of mis-adjudicated claims in tech stack, fixed issues, and retrained staff
+     resulting in $\sim \$$500,000 of payment corrections.
 
-    % \item   Responsible for creating, standardizing, automating, and maintaining new workflows for claims proccessing in accordance with both 
+     \item Winner of the 2022 Q3 Oscar Hackathon for Operations Excellence: Won first place in category for the creation of a React App using Regex to identify types of medical codes.
+    % \item   Responsible for creating, standardizing, automating, and maintaining new workflows for claims processing in accordance with both 
     %optimizational efficiency improvments, and 
 	% \item 	Responsible for designing, automating, and implementations of new workflows for adjudicating health insurance claims, as well
     % as training insurance claims processors in new workflows.
-	\item 	Troubleshooting and Issue Scoping: In response to Medicare audits found cause of mis-adjudicated claims in tech stack, fixed issues, and retrained staff
-            resulting in $\sim\$500,000$ of payment corrections.
 	% \item 	Automated analyses resulting in freeing up $\approx{6}$ person team for other analysis.
 	% \item 	Hand picked for SWAT team working on company wide claims adjudication issues.
 \end{itemize}
@@ -111,10 +76,10 @@
 \textit{Data/System Analyst (Consultant)} \hfill November 2020 - August 2021\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-    \item Project Management: Charged with overseeing all coordination and triaging of MTA IT Projects for all updates to proprietary MTA IT systems.
-            Responsiblities included identifying requirements, defining acceptance criteria, performing QA UAT, documenting, and performing user trainings on the new software updates.
-	\item Data Analysis: Designed and built, and maintained both financial and operational reports on the $\sim 30,000$ summonses issued/month and their payments using PowerBI, Oracle SQL, and Excel.
-    \item Operations SME/Superuser: Performed quality audits to verify data quality and proper processes of both internal users and external vendors.
+    \item Project Management: Charged with overseeing all coordination and issue prioritization of MTA IT Projects for all updates to proprietary MTA IT systems.
+            Responsibilities included identifying requirements, defining acceptance criteria, performing QA UAT, documentation, and performing user trainings on the new software updates for 100+ users.
+	\item Data Analysis: Designed, built, and maintained both financial and operational reports on the $\sim 50,000$ summonses issued/month and their payments using PowerBI, Oracle SQL, and Excel.
+    \item Operations SME/Superuser: Performed quality audits to verify data integrity and proper processes of both internal users and external vendors of the $\sim$ 1,000 daily summonses processing.
     % \item Coordinated all communication and projects with MTA IT for the Transit Adjudication Bureau. Supplied first level solutions where possible, documented, and provided escalation for serious issues.
     %\item Data extraction expert. Generated all reports, KPI's, and adhoc analyses used for deciding public policy with outside organizations including NYC City Hall and and the NYPD.
     % \item Business Analyst for workflow improvement/proprietary software improvements. Responsible for creating documentation and writing up system improvements.
@@ -126,10 +91,10 @@
 \textit{Business Analyst} \hfill June 2019 - November 2020\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Designed and built business processes automations including payroll, employee recertification and testing, and scripted KPI report generation resulting in $\sim$10\% reduction of manual office workload. 
+	\item Designed and built business processes automations including payroll, employee recertification and testing, and scripted KPI report generation resulting in $\sim$ 10\% reduction of manual office workload. 
     Created, modularized, and modernized, a system of scripts into a source controlled library to serve these automations using Python, ODBC, SQL, JavaScript, and Google Apps Script.
-	\item Designed and deployed an app using Google Apps Script and AppSheet and integrated with Atlassian API to trigger, triage, and track vehicle maintenance and repair work. This app processes over 1,600 data points/day from 50+ users/day, resulting in faster data flow, expediting preventative maintenance actions by up to a month.
-	\item Created a live profitability tracker used by c-suite management to measure operational efficiency, income, and profit margins using SQL, Google Apps Script, Google Maps API, and Google Sheets.
+	\item Engineered and deployed an app using Google Apps Script and AppSheet and integrated with Atlassian API to trigger, triage, and track vehicle maintenance and repair work. This app processes over 1,600 data points/day from 50+ users/day, resulting in faster data flow, expediting preventative maintenance actions by up to a month.
+	\item Created a live profitability tracker used by c-suite management to measure operational efficiency, income, and profit margins using SQL, Google Apps Script, Google Maps API, and Google Sheets across 80+ contracts and 50 routes.
 	\item Automated invoice generation in a scalable trackable, and maintainable practice using a Google Sheets interface, allowing nontechnical staff to configure over 30 different rate types across 80+ contracts in a centralized cloud-based solution, completely replacing the manual billing calculation workflows.
 	% \item Created and deployed a full-stack ecosystem linking a SQL database to Google Suite using R in a FIPPs and HIPAA compliant manner. This system displays live geographic information and driver shifts used to manage 50+ routes at once.
     % \item Generated all KPI’s such as On-Time Performance, trips per hour, etc. as needed by management, including demand sensing, capacity measurements and predictive modeling.
@@ -147,20 +112,12 @@
 \end{tabular}
 \vspace{2mm}
 
-
-\header{Awards}
-\textbf{Oscar Hackathon Q3 2022} \hfill August 2022\\
-Won first place in Operations Excellence for React App using Regex to identify types of medical codes. 
-\vspace*{2mm}
-
-\header{Education\hfill College of Wooster, GPA 3.5/4.0, Wooster, OH}
-\textbf{Bachelor of Arts} \hfill September 2015 - June 2019\\
-\begin{tabular}{ l| l }
-    Area of Study:& Double-major in Mathematics and Philosophy, with Economics Minor\\
-    Scholarship:& Melcher P. Fobes Scholarship for high academic achievement\\
-    Honor Societies:& Omicron Delta Epsilon (Economics) and Phi Sigma Tau (Philosophy)
-
-\end{tabular}
+\header{Education\hfill Wooster, OH}
+\textbf{College of Wooster}\hfill September 2015 - June 2019\\
+\textit{\textbf{Bachelor of Arts} in Mathematics and Philosophy, Economics Minor}\\
+    $\bullet$ Scholarship: Melcher P. Fobes Scholarship for high academic achievement\\
+    $\bullet$ Honor Societies: Omicron Delta Epsilon (Economics) and Phi Sigma Tau (Philosophy)\\
+    $\bullet$ GPA: 3.5/4.0
 
 \vspace*{2mm}
 
